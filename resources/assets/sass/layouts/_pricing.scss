@@ -1,0 +1,68 @@
+#pricing-introduction {
+	padding-bottom:0;
+
+	.text-block {
+		a {
+			color:$primary-color;
+		}
+		.btn-primary {
+			margin-top:20px;
+		}
+	}
+}
+
+#pricing {
+	.pricing-table {
+		width:100%;
+		float:left;
+		display:block;
+		position:relative;
+
+		.pricing-block {
+			width:33.333333%;
+			float:left;
+			position:relative;
+			display:block;
+			border:1px solid #ddd;
+			background:white;
+
+			h2 {
+				margin:0;
+				padding:25px;
+				color:white;
+				font-family:$font-primary;
+				font-weight:600;
+				font-size:44px;
+				background:black;
+			}
+
+			ul {
+				margin:0;
+				padding:25px;
+				list-style:none;
+
+				li {
+					position:relative;
+					width:100%;
+					padding:8px 0 8px 0px;
+					font-size:16px;
+					font-family:$font-primary;
+					color:$font-color;
+					border-bottom:1px solid $grey-light;
+
+					&:last-child {
+						border-bottom:0;
+						font-weight:600;
+						color:black;
+						font-size:25px;
+						padding-top:15px;
+					}					
+				}
+			}
+		}
+		.pricing-block:nth-child(2) {
+			border-left:0;
+			border-right:0;
+		}
+	}
+}

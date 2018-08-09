@@ -1,0 +1,72 @@
+footer {
+	background:white;
+	float:left;
+	width:100%;
+	position:relative;
+	padding:60px 0 0 0;
+
+	.col-md-5 {
+		&:first-child {
+			.col-footer {
+				padding-left:0px;
+			}
+		}
+	}
+
+	.col-footer {
+		float:left;
+		width:100%;
+	}
+	.col-newsletter {
+		max-width:280px;
+	}
+
+	a {
+		color:$primary-color;
+		text-decoration:none;
+	}
+	p {
+		font-size:100%;
+		line-height:27px;
+		font-weight:200;
+		color:$font-color;
+	}
+
+
+	.footer-info {
+		width:50%;
+		float:left;
+		position:relative;
+		p, a {
+			color:$font-color;
+			font-size:100%;
+			line-height:27px;
+			font-weight:200;
+		}
+	}
+
+	.img-footer {
+		display:block;
+		margin-top:16px;
+	}
+
+	.footer-bottom {
+		width:100%;
+		position:relative;
+		display:block;
+		margin-top:60px;
+		padding:7px 0;
+		background: #e32522; 
+		background: -moz-linear-gradient(45deg, #e32522 0%, #f30c66 100%); 
+		background: -webkit-linear-gradient(45deg, #e32522 0%,#f30c66 100%); 
+		background: linear-gradient(45deg, #e32522 0%,#f30c66 100%); 
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e32522', endColorstr='#f30c66',GradientType=1 );
+		text-align:center;
+		color:white;
+
+		a {
+			color:white;
+			text-transform:lowercase;
+		}
+	}
+}

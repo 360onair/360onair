@@ -3,12 +3,34 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Cviebrock\EloquentSluggable\Sluggable;
+use App\Request;
+
 
 class Project extends Model
 {
-    public function scopeShowProject($query) // Show projects at overview page
-    	{
-    		return $query->where('visible', 1);
-    	}
+    
+    use Sluggable;
+
+
+    public $fillable = ['title'];
+
+
+    public function sluggable()
+
+    {
+
+        return [
+
+            'slug' => [
+
+                'source' => 'title'
+
+            ]
+
+        ];
+
+    }
+
 }
 

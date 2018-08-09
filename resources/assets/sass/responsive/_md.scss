@@ -1,0 +1,177 @@
+@media only screen and (max-width : 1199px) {
+	section {
+		&.space {
+			padding:60px 0;
+		}
+	}
+
+	#slider {
+		.owl-slide {
+			.slide-bottom {
+				&:after {
+					content:"";
+					width:0;
+					height:0;
+				}
+			}
+			.title {
+
+				h1 {
+					font-size:40px;
+					line-height:48px;
+					margin-top:50px;
+					max-width:650px;
+				}
+			
+			}
+		}
+	}
+
+	.btn-primary {
+		font-size:17px;
+	}
+
+	.text-block {
+		p, li, a {
+			font-size:17px;
+		}
+		h2 {
+			font-size:40px;
+		}
+	}
+
+	#home-introduction {
+		padding:50px 25px;
+
+		.text-block {
+			.short {
+				margin-top:32px;
+			}
+		}
+	}
+
+	#home-what-we-do {
+		padding-bottom:60px;
+
+		.list-what {
+			max-width:860px; 
+			padding-left:50px;
+
+			ul {
+				li {
+					font-size:21px;
+					padding:5px 0 5px 35px;
+					
+					&:before {
+						font-size:24px;
+					}
+				}
+			}
+		}
+	}
+
+	.socials-banner {
+		h3  {
+			span {
+				font-size:36px;
+				margin-right:15px;
+				padding-top:1px;
+			}
+			a {
+				width:48px;
+				height:48px;
+				i {
+					font-size:21px;
+				}
+				&:hover,
+				&:focus {
+					i {
+						font-size:27px;
+					}
+				}
+			}
+		}
+	}
+	#home-projects {
+		padding:70px 0;
+
+		.project-item {
+			padding:0 10px;
+
+			p {
+				margin:0;
+			}
+		}
+	}
+
+	#about-introduction {
+		padding:65px 0;
+		.text-block-sm {
+			max-width:500px;
+
+			h2 {
+				margin-top:0;
+			}
+		}
+		#process {
+			max-width:350px;
+
+			ol {
+				li {
+					padding:6px 0 6px 32px;
+					font-size:16px;
+					&:before {
+						font-size:25px;
+						top:0;
+					}
+				}
+			}
+		}
+	}
+
+	#services {
+		padding-bottom:20px;
+		.list-services {
+			li {
+				.service-block {
+					.service-short {
+						width:55%;
+						padding:30px 25px;
+					}
+					.service-image {
+						width:45%;
+					}
+				}
+			}
+		}
+	}
+
+	#pricing {
+		.pricing-table {
+			.pricing-block {
+				
+				ul {
+					min-height:410px;
+				}
+
+				h2 {
+					font-size:40px;
+				}
+			}	
+		}
+	}
+
+	#contact {
+		#form-contact {
+			max-width:500px;
+		}
+
+		
+	}
+
+	footer {
+		.col-footer {
+			padding-left:30px;
+		}
+	}
+}

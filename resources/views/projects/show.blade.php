@@ -1,18 +1,30 @@
-<!doctype html>
-<html lang="nl">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('app')
 
-        <title></title>
+@section('content')
+	<header>
+		<div class="title">
+			<div class="fadeInDown">
+				<h1></h1>
+				<h2></h2>
+			</div>
+		</div>
+		<div id="slide" style="background:url('/images/headers/prijzen.jpg') no-repeat; background-position:50% 0; background-size:cover;"></div>	
+	</header>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+	<section class="grey space" id="project-description">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="text-block text-center">
+						{{ $project->title }}
 
-    
-    </head>
-    <body>
-        {{ $project->body }}
-    </body>
-</html>
+					
+					
+						bla
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+@endsection

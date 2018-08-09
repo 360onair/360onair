@@ -1,30 +1,44 @@
-<!doctype html>
-<html lang="nl">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('app')
 
-        <title></title>
+@section('content')
+    <header>
+        <div class="title">
+            <div class="fadeInDown">
+                <h1>Gerse projecten hiero!</h1>
+                <h2>De opdrachtgevers waar wij voor werken lopen zeer uiteen. Met trots presenteren wij hier een aantal projecten van 360onair.</h2>
+            </div>
+        </div>
+        <div id="slide" style="background:url('/images/headers/over-360onair.jpg') no-repeat; background-position:50% 0; background-size:cover;"></div> 
+    </header>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        @foreach($projects as $project)
+                            <li>
+                                <div class="project-item">
+                                    <div class="project-image">
+                                        <img src="{{ $project->projectimage }}" class="img-responsive" alt="" />
+                                    </div>
+                                    <div class="project-short">
+                                        <h2>{{ $project->title }}</h2>
+                                        <p>{{ $project->short }}</p>
+                                        <a href="/projecten/{{ $project->slug }}">Bekijk project</a>
+                                    </div>
+                                </div>
 
-    
-    </head>
-    <body>
-        Projecten
-
-        <ul>
-            @foreach($projects as $project)
-
-                <li>
-                    <a href="/projecten/{{ $project->slug }}">{{ $project->title }}</a>
-                </li>
-            @endforeach
-        </ul>
+                                
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
         
 
-        
-    </body>
-</html>
+@endsection
+
+       

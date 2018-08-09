@@ -1,0 +1,78 @@
+#contact {
+
+	#form-contact {
+		width:100%;
+		max-width:680px;
+		float:left;
+	}
+
+	#info {
+		width:100%;
+		max-width:350px;
+		float:right;
+		position:relative;
+		padding:25px;
+
+		h3 {
+			margin:0 0 10px 0;
+			padding:0;
+			font-size:25px;
+		}
+		p, a {
+			font-family:$font-primary;
+			font-weight:200;
+			font-size:100%;
+			line-height:28px;
+		}
+		a {
+			color:$primary-color;
+		}
+
+		ul {
+			margin:0;
+			padding:0;
+			list-style:none;
+
+			li {
+				padding:1px 0;
+				position:relative;
+				width:100%;
+				float:left;
+				display:block;
+				a, p {
+					color:$font-color;
+					font-family:$font-primary;
+					font-size:100%;
+				}
+
+				&:last-child {
+					margin:10px 0 30px 0;
+					
+					a {
+						color:$primary-color;
+						width:32px;
+						height:32px;
+						font-size:18px;
+						display:block;
+						float:left;
+						margin:0 4px 0 0;
+						border-radius:50%;
+						border:3px solid $primary-color;
+						position:relative;
+
+						i {
+							position:absolute;
+							top:50%;
+							left:50%;
+							transform:translate(-50%,-50%);
+						}
+					}
+				}
+			}
+		}
+		ul + h3 {
+			font-size:19px;
+			margin:0 0 7px 0;
+		}
+	}
+}

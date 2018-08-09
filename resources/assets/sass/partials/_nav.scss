@@ -1,0 +1,244 @@
+@keyframes stick{
+  0% {
+    transform:translate3d(0,50%,0);
+    visibility:visible;
+  }
+  to
+  {
+    transform:translateZ(0);
+  }
+}
+@keyframes bounceInDown {
+  0%,60%,75%,90%,to {
+    animation-timing-function:cubic-bezier(.215,.61,.355,1)
+  }
+  0% {
+    opacity:0;transform:translate3d(0,-3000px,0)
+  }
+  60%{
+    opacity:1;
+    transform:translate3d(0,15px,0)
+  }
+  75%{
+    transform:translate3d(0,-20px,0)
+  }
+  90%{
+    transform:translate3d(0,5px,0)
+  }
+  to{
+    transform:none
+  }
+}
+@keyframes bounceInUp{
+  0%,60%,75%,90%,to{
+    animation-timing-function:cubic-bezier(.215,.61,.355,1)
+  }
+  0% {
+    opacity:0;
+    transform:translate3d(0,3000px,0)
+  }
+  60% {
+    opacity:1;
+    transform:translate3d(0,-20px,0)
+  }
+  75% {
+    transform:translate3d(0,10px,0)
+  }
+  90% {
+    transform:translate3d(0,-5px,0)
+  }
+  to {
+    transform:translateZ(0)
+  }
+}
+
+
+.nav-fix {
+	position:fixed;
+	top:30px;
+	width:100%;
+	z-index:100;
+	height:100px;
+	
+	.logo {
+		position:absolute;
+		top:0px;
+		left:40px;
+		width:320px;
+		transition: .25s ease-in-out;
+		
+		img {
+			max-width:100%;
+			display:block;
+			transition: .25s ease-in-out;
+		}
+	
+	}
+
+	button {
+	    background: transparent;
+	    border: 0;
+	    width: 50px;
+	    height: 35px;
+	    position: absolute;
+	    top:33px;
+	    right:60px;
+	    transform: rotate(0deg);
+	    transition: .5s ease-in-out;
+	    cursor: pointer; 
+      z-index:1001;
+	}
+    button span {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 100%;
+      background: white;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out; 
+    }
+    button span:nth-child(1) {
+      top: 0; 
+      width:50%
+    }
+    button span:nth-child(2) {
+      top: 12px; 
+    }
+    button span:nth-child(3) {
+      top: 24px;
+      width:75%; 
+    }
+  	.menu-toggle.open span:nth-child(1) {
+    	top: 12px;
+    	transform: rotate(135deg); 
+      width:100%
+    }
+  	.menu-toggle.open span:nth-child(2) {
+	    opacity: 0;
+	    left: -60px; 
+    }
+  	.menu-toggle.open span:nth-child(3) {
+    	top: 12px;
+    	transform: rotate(-135deg);
+      width:100%; 
+    }
+
+    button {
+      &:hover,
+      &:focus {
+        outline:0;
+        span:nth-child(1) {
+          width:75%;
+          outline:0;
+        }
+        span:nth-child(2) {
+          width:50%;
+          outline:0;
+        }
+        span:nth-child(3) {
+          width:100%;
+          outline:0;
+        }
+      }
+    }
+
+    .menu-toggle.open {
+      &:hover,
+      &:focus {
+        span:nth-child(1),
+        span:nth-child(3)  {
+          width:100%;
+          transform:rotate(0deg);
+        }
+      }
+    }
+    &.stick {
+      background:black;
+      height:95px;
+      animation-duration:1s;
+      animation-fill-mode:both;
+      animation-name:stick;
+      top:0;
+
+      .logo {
+        width:270px;
+        top:10px;
+        left:40px;
+
+        img {
+          height:auto !important;
+        }
+
+      }
+
+    }
+    
+  }
+  
+.menu {
+  width:100%;
+  height:100%;
+  opacity:0;
+  background:rgba(0,0,0,0);
+  position:fixed;
+  top:-100%;
+  left:0;
+  right:0;
+  margin:0 auto;
+  z-index:-1;
+  transition:ease all 0.2s;
+  ul {
+    margin:0;
+    padding:50px 0 15px 0;
+    list-style:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transition:ease all 0.25s;
+    opacity:0;
+
+    li {
+      width:100%;
+      position:relative;
+      float:left;
+      display:block;
+      text-align:center;
+      a {
+        display:block;
+        padding:8px 0;
+        position:relative;
+        color:white;
+        font-size:28px;
+        font-family:$font-title;
+        text-align:center;
+
+        &:hover,
+        &:focus {
+          color:$primary-color;
+          text-decoration:none;
+        }
+      }
+      &.active {
+        a {
+          color:$primary-color;
+          text-decoration:none;
+        }
+      }
+    }
+  }
+  &.active {
+    opacity:1;
+    background:rgba(0,0,0,0.98);
+    z-index:99;
+    width:100%;
+    height:100%;
+    top:0;
+    ul {
+      opacity:1;
+    }
+  }
+}

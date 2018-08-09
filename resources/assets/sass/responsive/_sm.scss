@@ -1,0 +1,202 @@
+@media only screen and (max-width : 991px) {
+	.nav-fix {
+		.logo {
+			width:250px;
+
+			img {
+				width:100%;
+				height: auto !important;
+			}
+		}
+		button {
+			top:25px;
+		}
+		&.stick {
+			height:79px;
+			.logo {
+				width:220px;
+			}
+		}
+	}
+
+	#home-what-we-do {
+		.list-what {
+			ul {
+				li {
+					width:50%;
+					padding-left:40px !important;
+					&:before {
+						left:0 !important;
+					}
+				}
+			} 
+		}
+	}
+
+	#about-introduction {
+		.text-block-sm {
+			text-align:center;
+			width:100%;
+			max-width:100%;
+			display:block;
+		}
+		#process {
+			margin-top:50px;
+			padding:0;
+			width:100%;
+			max-width:100%;
+			background:transparent;
+			box-shadow:none;
+
+			h2 {
+				text-align:center;
+				margin-bottom:30px;
+			}
+
+			ol {
+				text-align:center;
+				font-size:18px;
+				counter-reset: item;
+				list-style:none;
+
+				li {
+					font-size:18px;
+					margin-bottom:15px;
+					counter-increment: item;
+					float:left;
+					text-align:left;
+					padding-left:50px;
+
+					&:nth-child(odd) {
+						width:55%;
+					}
+					&:nth-child(even) {
+						width:45%;
+					}
+
+
+					&:before {
+					   margin-right: 10px;
+					   content: counter(item);
+					   background: $primary-color;
+					   border-radius: 100%;
+					   color: white;
+					   font-family: $font-primary;
+					   width: 40px;
+					   height:40px;
+					   padding-top:3px;
+					   text-align: center;
+					   display: inline-block;
+					}
+				}
+			}
+		}
+	}
+
+	#services {
+		.list-services {
+			li {
+				.service-block {
+					.service-short {
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+
+	#pricing {
+		.pricing-table {
+			.pricing-block {
+				ul {
+					min-height:452px;
+				}
+				h2 {
+					font-size:26px;
+				}
+			}
+		}	
+	}
+
+	#contact {
+		#form-contact {
+			max-width:100%;
+			width:100%;
+			display:block;
+		}
+		
+		#info {
+			width:100%;
+			max-width:100%;
+			padding:50px 0 25px 0;
+			background:transparent;
+			box-shadow:none;
+
+			h3 {
+			padding-left:40px;
+			margin-bottom:20px;
+				&:before {
+					content:"\f0f4";
+					font-family:fontAwesome;
+					position:absolute;
+					left:0;
+					top:46px;
+					font-size:30px;
+				}
+			}
+			ul {
+				width:50%;
+				float:left;
+				position:relative;
+				li {
+					padding:6px 0;
+					a {
+						font-size:20px;
+						color:$primary-color;
+					}
+					&:first-child {
+						padding-top:0;
+					}
+				}
+			}
+			#company-details {
+				position:relative;
+				float:left;
+				width:50%;
+				
+				h3 {
+					padding-left:0;
+					margin-bottom:7px;
+					margin-top:4px;
+					font-size:18px;
+					position:relative;				
+					&:before {
+						content:"";
+					}
+
+				}
+			}
+		}
+	}
+
+	footer {
+		.col-md-5,
+		.col-md-4,
+		.col-md-3 {
+			width:33.333333%;
+		    flex: 0 0 33.333333%;
+    		max-width: 33.333333%;
+		}
+		.col-footer {
+			padding-left:0;
+		}
+		.col-md-3 {
+			.col-footer {
+				padding-left:30px;
+			}
+		}
+		.footer-info {
+			width:100%;
+		}
+	}
+}

@@ -11,29 +11,49 @@
 |
 */
 
-use App\Project;
+
+/*Route::get('/projecten', 'ProjectController@index');
+Route::get('/projecten/{project}', 'ProjectController@show');
+*/
+Route::post('/form/contact', 'FormController@contact');
 
 
-Route::get('/projecten', function () {
+Route::get('/projecten', 'ProjectController@index');
+Route::get('/projecten/{slug}', 'ProjectController@show')->name('projects.show');
 
-	$projects = Project::all();
-	
-	// $task = DB::table('projects')->latest()->get();
-
-
-    return view('projects.index', compact('projects'));
+Route::get('/', function () {
+    return view('templates.home');
 });
 
-
-Route::get('/projecten/{slug}', function ($slug) {
-
-	$slug = DB::table('projects')->where('slug', $slug)->get();
-
-    return view('projects.show', compact('project'));
-
+Route::get('/over-360onair', function () {
+    return view('templates.about');
 });
 
-
-Route::get('/about', function () {
-    return view('about');
+Route::get('/tarieven', function () {
+    return view('templates.pricing');
 });
+
+Route::get('/privacyverklaring', function () {
+    return view('templates.privacy');
+});
+
+Route::get('/disclaimer', function () {
+    return view('templates.disclaimer');
+});
+
+Route::get('/contact', function () {
+    return view('templates.contact');
+});
+/*
+Route::post('project-create', ['as'=>'projects.single','uses'=>'ProjectController@create']);
+*/
+
+/* Route::get('/projecten/{slug}', ['as' => 'projects.single', 'uses' => 'ProjectController@getSingle'])->where('slug', '[\w\d\-\_]+'); */
+
+/*
+Route::get('/projecten/{id}', function ($id) {
+    $slug = DB::table('projects')->where('slug', $slug)->get();
+}); 
+*/
+
+
