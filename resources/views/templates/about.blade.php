@@ -67,7 +67,7 @@
 
 									{{-- <a class="btn btn-primary" href="/projecten">Bekijk projecten</a> --}}
 								</div>
-								<div class="service-image hidden-xs hidden-sm">
+								<div class="service-image d-none d-sm-block">
 									<img src="/images/services/google-streetview-trusted-photographer.jpg" alt="Google Streetview Tour" />
 								</div>
 							</div>
@@ -90,7 +90,7 @@
 										
 										{{-- <a class="btn btn-primary" href="/projecten">Bekijk projecten</a> --}}
 								</div>
-								<div class="service-image hidden-xs hidden-sm">
+								<div class="service-image d-none d-sm-block">
 									<img src="/images/services/360-video-little-planet.gif" alt="360 graden video's" />
 								</div>
 							</div>
@@ -112,7 +112,7 @@
 									
 									{{-- <a class="btn btn-primary" href="/contact">Vraag offerte aan</a> --}}
 								</div>
-								<div class="service-image hidden-xs hidden-sm">
+								<div class="service-image d-none d-sm-block">
 									<img src="/images/services/360-livestream.jpg" alt="360 graden livestreamen" />
 								</div>
 							</div>
@@ -132,7 +132,7 @@
 									
 									{{-- <a class="btn btn-primary" href="/contact">Bekijk projecten</a> --}}
 								</div>
-								<div class="service-image hidden-xs hidden-sm">
+								<div class="service-image d-none d-sm-block">
 									<img src="/images/services/360-fotografie.jpg" alt="360 graden fotografie" />
 								</div>
 							</div>
