@@ -8,6 +8,7 @@
 		<div class="title">
 			<div class="fadeInDown">
 				<h1>Privacy nemen wij serieus!</h1>
+				<h2>Hoewel alles te zien is met 360 graden content nemen we niet alles op. Jouw privacygegevens zijn in veilige handen.</h2>
 			</div>
 		</div>
 		<div id="slide" style="background:url('/images/headers/over-360onair.jpg') no-repeat; background-position:50% 0; background-size:cover;"></div>	

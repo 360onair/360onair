@@ -29,7 +29,28 @@
 			}
 		}
 	}
-	
+	.menu-contact {
+		width:50vw;
+		.btn-second {
+			background:#25d366;
+			i {
+				top:50%;
+			}
+		}
+		.btn-first {
+			i {
+				top:calc(50% - 1px);
+			}
+		}
+		.btn-first,
+		.btn-second,
+		.btn-third {
+			transition:none;
+			i {
+				transition:none;
+			}
+		}
+	}
 
 	header {
 		min-height:300px;

@@ -14,8 +14,11 @@
 
 /*Route::get('/projecten', 'ProjectController@index');
 Route::get('/projecten/{project}', 'ProjectController@show');
-*/
 Route::post('/form/contact', 'FormController@contact');
+*/
+
+Route::get('create-category', 'CategoryController@create');
+Route::post('create-category', 'CategoryController@store');
 
 
 Route::get('/projecten', 'ProjectController@index');

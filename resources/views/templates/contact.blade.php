@@ -8,7 +8,7 @@
 		<div class="title">
 			<div class="fadeInDown">
 				<h1>Ken het zijn dat ik u kan?</h1>
-				<h2>Leuk dat je in contact wil komen met het 360onair team. Laat een bericht achter via ons contactformulier en je krijgt binnen 24 uur reactie.</h2>
+				<h2>Leuk dat je in contact wil komen met het 360onair team. Laat een bericht achter via e-mail, telefoon of Facebook en je krijgt binnen 24 uur reactie.</h2>
 			</div>
 		</div>
 		<div id="slide" style="background:url('/images/headers/contact.jpg') no-repeat; background-position:50% 0; background-size:cover;"></div>	
@@ -18,8 +18,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
+					<div class="text-block text-block-sm">
+						<h2>We bijten niet.</h2>
+						<p>360onair is een Rotterdams mediabedrijf wat video's en foto's maakt door heel het land. Schroom dus niet om contact met ons op te nemen voor een offerte of om jouw unieke idee met ons te delen. Wil je liever eerst wat werk bekijken van 360onair? Bekijk dan eens onze <a href="https://www.facebook.com/360onair-1340754376051203/" target="_blank">Facebook</a> en <a href="https://www.youtube.com/channel/UC-Kzaa63HT1cJTVR4biThmg" target="_blank">Youtube</a> pagina. </p>
+
+						<a href="mailto:info@360onair.com" class="btn btn-primary">Contact opnemen</a>
+					</div>
+
+					<!--
 					<div class="form-container" id="form-contact">
-				
+						
 						 <form class="form-request" id="contactForm" action="/form/contact" method="POST">
 							 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 						    
@@ -51,8 +59,10 @@
 						    </div>
 
 						</form>
+					
 						
 					</div>
+					-->
 
 					<div class="white-block" id="info">
 						<h3>Effe bakkie pleur doen?</h3>
@@ -68,8 +78,8 @@
 								BTW: NL198749338B01<br />
 								IBAN: NL73 RABO 0322 823 374<br />
 								<br />
-								<a href="/privacyverklaring" target="_blank">Privacyverklaring</a> <br />
-								<a href="/disclaimer" target="_blank">Disclaimer</a>
+								<a href="/privacyverklaring">Privacyverklaring</a> <br />
+								<a href="/disclaimer">Disclaimer</a>
 							</p>
 						</div>
 					</div>
@@ -85,98 +95,4 @@
 		   $("#slide").css("background-position","50% " + ($(this).scrollTop() / 2) + "px");
 	   });
 	</script> 
-
-	<script>
-		/* FORM */
-
-$('form.form-request').submit(function (e) {
-    var errorMessages = [];
-    var form = $(this);
-
-    form.find(".has-error").removeClass('has-error');
-
-    if (typeof tinyMCE != 'undefined') tinyMCE.triggerSave();
-
-
-    $.ajax(
-        {
-            type: 'POST',
-            url: form.attr('action'),
-            data: form.serialize(),
-
-            success: function (data) {
-                form.find('.alert-danger').hide();
-
-                e.preventDefault();
-
-                if (data.result) {
-                    if (data.redirect) {
-                        window.location.href = data.redirect;
-                        e.preventDefault();
-                    } else if (data.alert) {
-                        alertify.success(data.alert, 5);
-                        e.preventDefault();
-                    } else if (data.response) {
-                        form.trigger('reset').find(".alert-danger").hide(200).end().find(".alert-success").html(data.response).show(200);
-                        e.preventDefault();
-                    }
-
-                    return true;
-                }
-
-                form.find('.alert-danger').html(data.error).show(200);
-
-                if (data.error_fields) {
-                    $.each(data.error_fields, function (key, value) {
-                        form.find("input[name='" + value + "'], textarea[name='" + value + "'], select[name='" + value + "'], select[name='" + value + "[]']").parent().addClass('has-error');
-                    });
-                }
-
-                e.preventDefault();
-            },
-            error: function (data) {
-                form.find(".alert-danger:visible").hide();
-
-                if (data.responseJSON === undefined) {
-                    console.log(data);
-                    e.preventDefault();
-                    return false;
-                }
-
-                var errors = data.responseJSON;
-
-                $.each(errors, function (key, value) {
-                    keys = key.split('.');
-
-                    errorMessages.push(value[0]);
-                    if (keys.length > 1) {
-                        form.find("input[name='" + keys[0] + "[" + keys[1] + "]'], select[name='" + keys[0] + "[" + keys[1] + "]']").parent().addClass('has-error');
-                    } else {
-                        form.find("input[name='" + key + "'], textarea[name='" + key + "'], select[name='" + key + "'], select[name='" + key + "[]']").parent().addClass('has-error');
-                    }
-                });
-
-                if (errorMessages) {
-                    if (errorMessages.length == 1) {
-                        form.find('.alert-danger').html(errorMessages[0]).show(200);
-                    } else {
-                        form.find('.alert-danger').html('<ul></ul>');
-                        var errorMessage = '';
-                        $.each(errorMessages, function (i, message) {
-                            errorMessage += '<li>' + message + '</li>';
-                        });
-
-                        form.find('.alert-danger ul').append(errorMessage);
-                        form.find('.alert-danger').show(200);
-                    }
-                }
-
-                e.preventDefault();
-            },
-            async: false
-        }
-    );
-});
-
-</script>
 @endsection

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="nl">
     <head>
-        <title>@yield('metatitle') 360 video's en foto's vastleggen - 360 graden livestreamen - Google streetview gecertificeerd - 360onair</title>
+        <title>@yield('metatitle')</title>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,10 +29,18 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Poppins:100,200,300,400,600,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
         @yield('stylesheets')
         @yield('csrf')
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107061612-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-107061612-1');
+        </script>
     </head>
     <body>
         @include('partials._nav')
@@ -62,7 +70,7 @@
 
             
                 $(".toggles").click(function(){
-                    $(".menu, .wrapper").toggleClass("active", 600);
+                    $(".menu, .wrapper, body").toggleClass("active", 600);
                 });
                 
 

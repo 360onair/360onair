@@ -13,6 +13,9 @@ body {
 	position:relative;
 	min-height:100%;
 	overflow-x:hidden;
+	&.active {
+		overflow:hidden;
+	}
 }
 
 h1 {

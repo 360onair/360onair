@@ -18,11 +18,11 @@ class FormController extends Controller
             'bericht'    => 'required'
         ]);
 
-        $mail = Mail::send('emails.contact', compact('request'), function ($message) use ($request) {
-            $message->from(config('mail.from.address'), config('mail.from.name'));
-            $message->to($request->email, $request->naam);
-            $message->bcc(config('mail.bcc'), config('mail.bcc'));
-            $message->subject('Jouw bericht via 360onair');
+        $mail = Mail::send('emails.contact', compact('request'), function ($msg) use ($request) {
+            $msg->from(config('mail.from.address'), config('mail.from.name'));
+            $msg->to($request->email, $request->naam);
+            $msg->bcc(config('mail.bcc'), config('mail.bcc'));
+            $msg->subject('Jouw bericht via 360onair');
         });
 
         if ($mail) {
