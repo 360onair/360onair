@@ -30,7 +30,7 @@
 		<div class="spotlight">
 			<a class="btn-play" href="https://www.youtube.com/watch?v=o1qK9rkaZaE" target="_blank">
 				<span class="icon icon-play"><i class="fa fa-youtube-play"></i></span>
-				<img src="/images/home/hallmark-popup-store-utrecht.jpg" class="img-responsive" alt="Hallmark Popup Store Utrecht" />
+				<img src="/images/home/hallmark-popup-store-utrecht.jpg" class="img-fluid" alt="Hallmark Popup Store Utrecht" />
 				<h2><span>Opening pop-up store</span><span>Hallmark Utrecht Centraal</span> </h2>
 			</a>
 		</div>

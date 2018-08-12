@@ -53,7 +53,7 @@
 						<li>
 							<div class="service-block">
 								<div class="mob-image visible-xs visible-sm">
-									<img src="/images/services/google-streetview-trusted-photographer.jpg" alt="Google streetview tour mobile" class="img-responsive" />
+									<img src="/images/services/google-streetview-trusted-photographer.jpg" alt="Google streetview tour mobile" class="img-fluid" />
 								</div>
 								<div class="service-short">
 									<h2>Google Streetview Tour</h2>
@@ -76,7 +76,7 @@
 						<li>
 							<div class="service-block">
 								<div class="mob-image visible-xs visible-sm">
-									<img src="/images/services/360-video.jpg" alt="360 graden video's mobile" class="img-responsive" />
+									<img src="/images/services/360-video.jpg" alt="360 graden video's mobile" class="img-fluid" />
 								</div>
 								<div class="service-short">
 									<h2>360 graden video's</h2>
@@ -99,7 +99,7 @@
 						<li>
 							<div class="service-block">
 								<div class="mob-image visible-xs visible-sm">
-									<img src="/images/services/360-livestream.jpg" alt="360 graden livestreamen mobile" class="img-responsive" />
+									<img src="/images/services/360-livestream.jpg" alt="360 graden livestreamen mobile" class="img-fluid" />
 								</div>
 								<div class="service-short">
 									<h2>360 graden livestreamen</h2>
@@ -121,7 +121,7 @@
 						<li>
 							<div class="service-block">
 								<div class="mob-image visible-xs visible-sm">
-									<img src="/images/services/360-fotografie.jpg" alt="360 graden fotografie mobile" class="img-responsive" />
+									<img src="/images/services/360-fotografie.jpg" alt="360 graden fotografie mobile" class="img-fluid" />
 								</div>
 								<div class="service-short">
 									<h2>360 graden fotografie</h2>
