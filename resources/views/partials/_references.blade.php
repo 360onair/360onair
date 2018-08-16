@@ -18,7 +18,7 @@
 		<img src="/images/references/verkaaik-boekhandel-gouda.png" height="80" width="150" class="reference-logo" alt="Verkaaik Boeken Gouda" />
 	</div>
     <div class="owl-slide">
-        <img src="/images/references/njoy-party.png" height="50" width="185" class="reference-logo" alt="Njoy Party" />
+        <img src="/images/references/njoy-party.png" height="60" width="222" class="reference-logo" alt="Njoy Party" />
     </div>
 </div>
 
