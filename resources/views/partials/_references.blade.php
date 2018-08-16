@@ -2,6 +2,9 @@
 	<div class="owl-slide">
 		<img src="/images/references/fysiofit.png" height="80" width="150" class="reference-logo" alt="Fysiofit" />
 	</div>
+    <div class="owl-slide">
+        <img src="/images/references/dance-valley.svg" height="80" width="80" class="reference-logo" alt="Dance Valley Festival" />
+    </div>
 	<div class="owl-slide">
 		<img src="/images/references/hallmark.png" height="80" width="143" class="reference-logo" alt="Fysiofit" />
 	</div>
