@@ -2203,7 +2203,7 @@ header:after {
     height: 320px;
   }
 
-  #home-slider .owl-carousel .owl-slide .title {
+  #home-slider .owl-carousel .owl-slide .slide-bottom .title {
     position: absolute;
     top: auto;
     bottom: 32px;
@@ -2212,24 +2212,32 @@ header:after {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     background: rgba(0, 0, 0, 0.25);
+    background: transparent;
   }
 
-  #home-slider .owl-carousel .owl-slide .title h1 {
+  #home-slider .owl-carousel .owl-slide .slide-bottom .title h1 {
     color: white;
     padding: 8px 15px;
     font-size: 25px;
     line-height: 30px;
     max-width: 100%;
     margin-top: 0;
+    background: transparent;
   }
 
-  #home-slider .owl-carousel .owl-slide .title h1 span {
+  #home-slider .owl-carousel .owl-slide .slide-bottom .title h1 span {
     font-size: 25px;
     line-height: 30px;
+    background: transparent;
   }
 
-  #home-slider .owl-carousel .owl-slide .title .btn-primary {
+  #home-slider .owl-carousel .owl-slide .slide-bottom .title .btn-primary {
     display: none;
+  }
+
+  #home-slider .owl-carousel .owl-slide .slide-bottom:after {
+    height: 100%;
+    width: 100%;
   }
 
   #home-slider .owl-carousel .owl-slide ul.specs {
