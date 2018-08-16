@@ -3,7 +3,7 @@
 		<img src="/images/references/fysiofit.png" height="80" width="150" class="reference-logo" alt="Fysiofit" />
 	</div>
     <div class="owl-slide">
-        <img src="/images/references/dance-valley.svg" height="80" width="80" class="reference-logo" alt="Dance Valley Festival" />
+        <img src="/images/references/dance-valley.svg" height="105" width="105" class="reference-logo" alt="Dance Valley Festival" />
     </div>
 	<div class="owl-slide">
 		<img src="/images/references/hallmark.png" height="80" width="143" class="reference-logo" alt="Fysiofit" />
@@ -18,7 +18,7 @@
 		<img src="/images/references/verkaaik-boekhandel-gouda.png" height="80" width="150" class="reference-logo" alt="Verkaaik Boeken Gouda" />
 	</div>
     <div class="owl-slide">
-        <img src="/images/references/njoy-party.png" height="80" width="296" class="reference-logo" alt="Njoy Party" />
+        <img src="/images/references/njoy-party.png" height="50" width="185" class="reference-logo" alt="Njoy Party" />
     </div>
 </div>
 
