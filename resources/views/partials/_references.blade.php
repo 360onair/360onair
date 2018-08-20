@@ -6,8 +6,11 @@
         <img src="/images/references/dance-valley.svg" height="105" width="105" class="reference-logo" alt="Dance Valley Festival" />
     </div>
 	<div class="owl-slide">
-		<img src="/images/references/hallmark.png" height="80" width="143" class="reference-logo" alt="Fysiofit" />
+		<img src="/images/references/hallmark.png" height="80" width="143" class="reference-logo" alt="Hallmark Nederland" />
 	</div>
+    <div class="owl-slide">
+        <img src="/images/references/dutch-valley.svg" height="80" width="98" class="reference-logo" alt="Dutch Valley Festival" />
+    </div>
 	<div class="owl-slide">
 		<img src="/images/references/city-of-dance-festival.png" height="80" width="130" class="reference-logo" alt="City Of Dance Festival" />
 	</div>
