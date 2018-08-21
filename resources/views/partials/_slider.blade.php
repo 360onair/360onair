@@ -1,5 +1,5 @@
 <div class="owl-carousel" id="slider">
-	<div class="owl-slide" style="background: url('/images/home/dance-valley-spaarnwoude.jpg'); background-size:cover; background-position:bottom center">
+	<div class="owl-slide" style="background: url('/images/home/dance-valley-spaarnwoude.jpg'); background-size:cover; background-position:top center">
 		<div class="slide-bottom">
 			<div class="title">
 	            <h1><span>Dance Valley 2018</span></h1>
