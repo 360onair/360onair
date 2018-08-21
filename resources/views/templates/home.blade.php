@@ -126,7 +126,7 @@
 		$('#slider').owlCarousel({
             loop: true,
             autoplay: true,
-            autoplayTimeout: 10000,
+            autoplayTimeout: 6000,
             margin: 0,
             items: 1,
             nav: false,
