@@ -23,6 +23,18 @@
 	        </ul>
 	    </div>
 	</div>
+	<div class="owl-slide" style="background: url('/images/home/dutch-valley-spaarnwoude.jpg'); background-size:cover; background-position:bottom center">
+		<div class="slide-bottom">
+			<div class="title">
+	            <h1><span>Dutch Valley 2018</span></h1>
+	        </div>	
+	        <ul class="specs">
+	        	<li>Spaarnwoude</li>
+	        	<li>Festival</li>
+	        	<li>360 foto's / video's</li>
+	        </ul>
+		</div>
+	</div>
 	<div class="owl-slide" style="background: url('/images/home/city-of-dance-festival.jpg'); background-size:cover; background-position:bottom center">
 		<div class="slide-bottom">
 			<div class="title">
