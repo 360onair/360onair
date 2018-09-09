@@ -63,8 +63,8 @@
 		<div class="text-center">
 			<h3>
 				<span>Stay tuned on our socials</span>
-				<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-				<a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+				<a href="https://www.facebook.com/360onair-1340754376051203/" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.youtube.com/channel/UC-Kzaa63HT1cJTVR4biThmg" target="_blank"><i class="fa fa-youtube"></i></a>
 			</h3>
 		
 		</div>

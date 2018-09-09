@@ -23,7 +23,7 @@
 	        </ul>
 	    </div>
 	</div>
-	<div class="owl-slide" style="background: url('/images/home/dutch-valley-spaarnwoude.jpg'); background-size:cover; background-position:bottom center">
+	<div class="owl-slide" style="background: url('/images/home/dutch-valley-spaarnwoude.jpg'); background-size:cover; background-position:center center">
 		<div class="slide-bottom">
 			<div class="title">
 	            <h1><span>Dutch Valley 2018</span></h1>
