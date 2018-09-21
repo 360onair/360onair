@@ -1,5 +1,8 @@
 <div class="owl-carousel" id="reference-slider">
 	<div class="owl-slide">
+        <img src="/images/references/sunglow-festival.png" height="80" width="391" class="reference-logo" alt="Sunglow Festival" />
+    </div>
+    <div class="owl-slide">
 		<img src="/images/references/fysiofit.png" height="80" width="150" class="reference-logo" alt="Fysiofit" />
 	</div>
     <div class="owl-slide">
